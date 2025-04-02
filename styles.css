@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif; /* Define la fuente del texto */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina los rellenos predeterminados */
+    background-color: #3d6b41a6; /* Establece un color de fondo gris claro */
+}
+
+/* Estilos para el menú de navegación - Color de fondo y espaciado */
+nav {
+    background-color: #f701ff; /* Color de fondo oscuro para el menú */
+    padding: 10px; /* Agrega espacio alrededor del menú */
+}
+
+/* Lista del menú - Elimina viñetas y centra el contenido */
+nav ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+    text-align: center; /* Centra los elementos del menú */
+}
+
+/* Elementos de la lista - Se muestran en línea con espacio entre ellos */
+nav ul li {
+    display: inline; /* Hace que los elementos se muestren en línea */
+    margin: 0 15px; /* Agrega espacio entre los elementos */
+}
+
+/* Enlaces del menú - Color blanco y sin subrayado */
+nav ul li a {
+    color: rgb(17, 63, 116); /* Establece el color del texto en blanco */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 18px; /* Tamaño del texto de los enlaces */
+}
+
+/* Efecto hover en los enlaces del menú - Cambia el color al pasar el cursor */
+nav ul li a:hover {
+    color: #ffcc00; /* Cambia el color del texto a amarillo */
+}
+
+/* Estilos para las secciones - Espaciado, color de fondo y sombras */
+section {
+    margin: 20px; /* Agrega margen exterior */
+    padding: 20px; /* Agrega relleno interior */
+    background-color: rgb(235, 16, 64); /* Fondo blanco para las secciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor de la sección */
+}
+
+/* Estilos para imágenes - Tamaño fijo, centrado y efecto de escala */
+img {
+    width: 100px; /* Define el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 10px auto; /* Centra la imagen */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+}
+
+/* Efecto hover en imágenes - Aumenta el tamaño al pasar el cursor */
+img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+}
+
+/* Estilos para la tabla - Tamaño completo y eliminación de espacios */
+table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho */
+    border-collapse: collapse; /* Elimina los espacios entre bordes */
+    margin-top: 20px; /* Agrega margen superior */
+}
+
+/* Bordes para la tabla, las filas y las celdas */
+table, th, td {
+    border: 1px solid rgb(40, 15, 73); /* Agrega bordes negros */
+}
+
+/* Espaciado interno de celdas y alineación del texto */
+th, td {
+    padding: 10px; /* Agrega relleno dentro de las celdas */
+    text-align: center; /* Centra el texto dentro de las celdas */
+}
+
+/* Encabezados de la tabla - Fondo oscuro y texto blanco */
+th {
+    background-color: #333; /* Fondo oscuro para los encabezados */
+    color: white; /* Texto en color blanco */
+}
+
+/* Adaptabilidad para dispositivos móviles - Ajustes para pantallas pequeñas */
+@media (max-width: 600px) {
+    nav ul {
+        display: flex; /* Usa flexbox para organizar los elementos */
+        flex-direction: column; /* Acomoda los elementos en columna */
+        align-items: center; /* Centra los elementos en la pantalla */
+    }
+
+    table {
+        font-size: 12px; /* Reduce el tamaño de fuente en pantallas pequeñas */
+    }
+}

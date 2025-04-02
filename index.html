@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Atributos CSS</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos -->
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#css">CSS</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#tabla">Tabla de Atributos CSS</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Sección sobre CSS -->
+    <section id="css">
+        <h1>¿Qué es CSS?</h1>
+        <p>CSS (Cascading Style Sheets) es un lenguaje de diseño gráfico para definir la presentación de documentos HTML.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+            <img src="https://logospng.org/download/css-3/logo-css-3-1536.png" alt="oip"> <!-- Imagen que enlaza a MDN -->
+        </a>
+    </section>
+    
+    <!-- Sección sobre JavaScript -->
+    <section id="javascript">
+        <h1>¿Qué es JavaScript?</h1>
+        <p>JavaScript es un lenguaje de programación que permite agregar interactividad y dinamismo a las páginas web.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">
+            <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Emblem.png" alt="javascript logo"> <!-- Imagen que enlaza a MDN -->
+        </a>
+    </section>
+    
+    <!-- Tabla de atributos CSS -->
+    <section id="tabla">
+        <h1>Tabla de Atributos CSS</h1>
+        <table>
+            <thead>
+                <tr> <!--primera fila de datos-->
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Valores Posibles</th>
+                    <th>Ejemplo</th>
+                    <th>Imagen</th>
+                    <th>Fuente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>font-size</td>
+                    <td>Define el tamaño de la fuente.</td>
+                    <td>small, medium, large, px, em, rem</td>
+                    <td><code>font-size: 16px;</code></td>
+                    <td><img src="https://seotacticas.es/wp-content/uploads/2022/04/dEcb0r2_7sQ.jpg" alt="r"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/font-size" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr> <!--segunda linea de datos-->
+                    <td>border-radius</td>
+                    <td>Define el redondeo de los bordes de un elemento.</td>
+                    <td>px, %, em</td>
+                    <td><code>border-radius: 10px;</code></td>
+                    <td><img src="https://www.bajarangisoft.com/blog/public/BlogPNG/1604467955.png" alt="border-radius"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/border-radius" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr><!--tercera inea de datos-->
+                    <td>display</td>
+                    <td>Define el tipo de caja de un elemento y cómo se comporta en el diseño.</td>
+                    <td>block, inline, flex, grid, none</td>
+                    <td><code>display: flex;</code></td>
+                    <td><img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*dwcWnf3ArsatTs5VG7h64w.png" alt="display"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/display" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr><!--cuarta linea de datos-->
+                    <td>flexbox (display: flex;)</td>
+                    <td>Define un contenedor flexible que organiza elementos internos en filas o columnas.</td>
+                    <td>flex, inline-flex</td>
+                    <td><code>display: flex; justify-content: center;</code></td>
+                    <td><img src="https://www.yunbitsoftware.com/blog/wp-content/uploads/2017/03/imagen_flexbox_align.png" alt="flexbox"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr><!--quinta linea de datos-->
+                    <td>position</td>
+                    <td>Define cómo se posiciona un elemento en la página.</td>
+                    <td>static, relative, absolute, fixed, sticky</td>
+                    <td><code>position: absolute; top: 50px; left: 100px;</code></td>
+                    <td><img src="https://th.bing.com/th/id/OIP.sYQP4KgDL1fF5_atls30XQAAAA?rs=1&pid=ImgDetMain" alt="position"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/position" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr><!--sexta tabla de datos-->
+                    <td>box-shadow</td>
+                    <td>Agrega sombras a los elementos.</td>
+                    <td>none, [offset-x] [offset-y] [blur-radius] [spread-radius] [color]</td>
+                    <td><code>box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);</code></td>
+                    <td><img src="https://i.pinimg.com/originals/2b/b8/ef/2bb8efc9ae15f7a16500d1d666231e40.png" alt="box-shadow"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/box-shadow" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr>
+                    <td>overflow</td>
+                    <td>Controla el comportamiento del contenido que excede el tamaño del contenedor.</td>
+                    <td>visible, hidden, scroll, auto</td>
+                    <td><code>overflow: hidden;</code></td>
+                    <td><img src="https://desarrolladoresweb.org/wp-content/uploads/Para-que-sirve-la-propiedad-overflow-de-CSS-1.jpg" alt="overflow"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/overflow" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr>
+                    <td>z-index</td>
+                    <td>Define el orden de apilamiento de los elementos.</td>
+                    <td>auto, número entero positivo o negativo</td>
+                    <td><code>z-index: 10;</code></td>
+                    <td><img src="https://www.tutorialspoint.com/css/images/z-index.png" alt="z-index"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/z-index" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr>
+                    <td>opacity</td>
+                    <td>Define el nivel de transparencia de un elemento.</td>
+                    <td>Valores entre 0 (totalmente transparente) y 1 (opaco)</td>
+                    <td><code>opacity: 0.5;</code></td>
+                    <td><img src="https://mgearon.com/wp-content/uploads/2016/03/Opacity-1024x471.png" alt="opacity"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/opacity" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr>
+                    <td>margin y padding</td>
+                    <td>Margin controla el espacio exterior de un elemento, y padding el espacio interior.</td>
+                    <td>px, %, em, auto</td>
+                    <td><code>margin: 10px; padding: 20px;</code></td>
+                    <td><img src="https://www.dongee.com/tutoriales/content/images/2023/03/image-67.png" alt="margin y padding"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/margin" target="_blank">MDN</a></td>
+                </tr>
+
+                <tr>
+                    <td>text-align</td>
+                    <td>Define la alineación horizontal del texto.</td>
+                    <td>left, center, right, justify</td>
+                    <td><code>text-align: center;</code></td>
+                    <td><img src="https://www.wikihow.com/images/thumb/b/b3/Align-Something-in-HTML-Step-2-Version-4.jpg/aid1536950-v4-728px-Align-Something-in-HTML-Step-2-Version-4.jpg" alt="text-align"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/text-align" target="_blank">MDN</a></td>
+                </tr>
+                <tr>
+                    <td>cursor</td>
+                    <td>Especifica el tipo de cursor al pasar el mouse.</td>
+                    <td>pointer, default, move</td>
+                    <td><code>cursor: pointer;</code></td>
+                    <td><img src="https://th.bing.com/th/id/R.49076b32e4fc131612deb9b533d73103?rik=JQpqZg6I6OH2PQ&riu=http%3a%2f%2fwww.falconmasters.com%2fwp-content%2fuploads%2f2014%2f11%2fComo-cambiar-el-cursor-de-tu-sitio-web-con-propiedad-CSS.jpg&ehk=7l1xNugTMrRBT0PAQ7FDFzoeHLFVrHyNYGRk%2bbjmTnk%3d&risl=&pid=ImgRaw&r=0" alt="cursor"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/cursor" target="_blank">MDN</a></td>
+                </tr>
+                <tr>
+                    <td>visibility</td>
+                    <td>Controla la visibilidad del elemento sin afectar el diseño.</td>
+                    <td>visible, hidden, collapse</td>
+                    <td><code>visibility: hidden;</code></td>
+                    <td><img src="https://data-flair.training/blogs/wp-content/uploads/sites/2/2023/03/css-visibility.webp" alt="visibility"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/visibility" target="_blank">MDN</a></td>
+                </tr>
+                <tr>
+                    <td>transform</td>
+                    <td>Aplica transformaciones como rotación, escala o traslación.</td>
+                    <td>rotate(), scale(), translate()</td>
+                    <td><code>transform: rotate(45deg);</code></td>
+                    <td><img src="https://blog.cables.gl/wp-content/uploads/2020/08/HTML-CSS-tut-02-transform-element-thumbnail-HD.png" alt="transform"></td>
+                    <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/transform" target="_blank">MDN</a></td>
+                </tr>
+                <!-- Se pueden agregar más filas con otros atributos CSS -->
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
