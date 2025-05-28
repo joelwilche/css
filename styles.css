@@ -1,97 +1,140 @@
+/* Reset de márgenes y uso del modelo de caja moderno */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo base del cuerpo del sitio */
 body {
-    font-family: Arial, sans-serif; /* Define la fuente del texto */
-    margin: 0; /* Elimina los márgenes predeterminados */
-    padding: 0; /* Elimina los rellenos predeterminados */
-    background-color: #3d6b41a6; /* Establece un color de fondo gris claro */
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-/* Estilos para el menú de navegación - Color de fondo y espaciado */
+/* Estilo del encabezado */
+header {
+  background: #003366;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Contenedor del logo y texto en el header */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Tamaño del logo */
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+/* Navegación */
 nav {
-    background-color: #f701ff; /* Color de fondo oscuro para el menú */
-    padding: 10px; /* Agrega espacio alrededor del menú */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
 }
 
-/* Lista del menú - Elimina viñetas y centra el contenido */
+/* Estilo del campo de búsqueda */
+nav input[type="text"] {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  width: 200px;
+}
+
+/* Lista de navegación */
 nav ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    padding: 0; /* Elimina el relleno predeterminado */
-    text-align: center; /* Centra los elementos del menú */
+  display: flex;
+  list-style: none;
+  gap: 1rem;
 }
 
-/* Elementos de la lista - Se muestran en línea con espacio entre ellos */
-nav ul li {
-    display: inline; /* Hace que los elementos se muestren en línea */
-    margin: 0 15px; /* Agrega espacio entre los elementos */
+/* Enlaces del nav */
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
-/* Enlaces del menú - Color blanco y sin subrayado */
-nav ul li a {
-    color: rgb(17, 63, 116); /* Establece el color del texto en blanco */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 18px; /* Tamaño del texto de los enlaces */
+/* Contenido principal */
+main {
+  padding: 1rem;
 }
 
-/* Efecto hover en los enlaces del menú - Cambia el color al pasar el cursor */
-nav ul li a:hover {
-    color: #ffcc00; /* Cambia el color del texto a amarillo */
-}
-
-/* Estilos para las secciones - Espaciado, color de fondo y sombras */
+/* Separación entre secciones */
 section {
-    margin: 20px; /* Agrega margen exterior */
-    padding: 20px; /* Agrega relleno interior */
-    background-color: rgb(235, 16, 64); /* Fondo blanco para las secciones */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor de la sección */
+  margin-bottom: 2rem;
 }
 
-/* Estilos para imágenes - Tamaño fijo, centrado y efecto de escala */
-img {
-    width: 100px; /* Define el ancho de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Hace que la imagen sea un bloque */
-    margin: 10px auto; /* Centra la imagen */
-    transition: transform 0.3s ease; /* Agrega una transición suave */
+/* Grid para tarjetas */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
-/* Efecto hover en imágenes - Aumenta el tamaño al pasar el cursor */
-img:hover {
-    transform: scale(1.1); /* Aumenta el tamaño de la imagen */
+/* Tarjeta individual */
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* Estilos para la tabla - Tamaño completo y eliminación de espacios */
-table {
-    width: 100%; /* Hace que la tabla ocupe todo el ancho */
-    border-collapse: collapse; /* Elimina los espacios entre bordes */
-    margin-top: 20px; /* Agrega margen superior */
+/* Imágenes dentro de tarjetas */
+.card img {
+  max-width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
-/* Bordes para la tabla, las filas y las celdas */
-table, th, td {
-    border: 1px solid rgb(40, 15, 73); /* Agrega bordes negros */
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
 }
 
-/* Espaciado interno de celdas y alineación del texto */
-th, td {
-    padding: 10px; /* Agrega relleno dentro de las celdas */
-    text-align: center; /* Centra el texto dentro de las celdas */
+/* Campos del formulario */
+form input,
+form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-/* Encabezados de la tabla - Fondo oscuro y texto blanco */
-th {
-    background-color: #333; /* Fondo oscuro para los encabezados */
-    color: white; /* Texto en color blanco */
+/* Botón de enviar */
+button {
+  background-color: #003366;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-/* Adaptabilidad para dispositivos móviles - Ajustes para pantallas pequeñas */
-@media (max-width: 600px) {
-    nav ul {
-        display: flex; /* Usa flexbox para organizar los elementos */
-        flex-direction: column; /* Acomoda los elementos en columna */
-        align-items: center; /* Centra los elementos en la pantalla */
-    }
+/* Pie de página */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
 
-    table {
-        font-size: 12px; /* Reduce el tamaño de fuente en pantallas pequeñas */
-    }
+/* Íconos sociales */
+footer a {
+  color: white;
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
 }
